@@ -1,0 +1,78 @@
+.swipe {
+  position: absolute;
+}
+
+.contentWrapper {
+}
+
+.imageWrapper {
+  /* background-color: aqua; */
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.expandedSection {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  animation: slideUp 0.15s ease-out 0s 1;
+  animation-direction: alternate;
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+
+.cardSection {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* border-style: solid; */
+}
+
+.topSection {
+  flex: 1;
+  border-radius: 15px;
+}
+.leftRightWrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.leftSection {
+  flex: 1;
+  /* border-style: solid; */
+}
+
+.rightSection {
+  flex: 1;
+  /* border-style: solid; */
+}
+
+.bottomSection {
+  flex: 0.5;
+  justify-content: flex-end;
+  /* border-style: solid; */
+}
+
+.imagePagination {
+  display: absolute;
+  height: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    /* height: 0px; */
+  }
+  100% {
+    transform: translateY(0%);
+    /* height: 150px; */
+  }
+}
