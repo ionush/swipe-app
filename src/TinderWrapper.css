@@ -2,6 +2,35 @@
   position: absolute;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80vw;
+  max-width: 310px;
+  height: 500px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: #fff;
+  box-shadow: inset 0px -7px 20px -7px rgba(0, 0, 0, 0.3);
+  transition: background-size 0.1s ease-in;
+  -moz-transition: background-size 0.1s ease-in;
+  -web-kit-transition: background-size 0.1s ease-in;
+  overflow: hidden;
+}
+
+.image {
+  display: flex;
+  width: 300px;
+  /* height: 490px; */
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-origin: content-box;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
 .contentWrapper {
 }
 
@@ -11,6 +40,16 @@
   flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+.infoIcon {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 150%;
+  /* background-color: aqua; */
+  padding: 10px;
+  color: gray;
 }
 
 .expandedSection {
@@ -34,6 +73,7 @@
 .topSection {
   flex: 1;
   border-radius: 15px;
+  /* background-color: aqua; */
 }
 .leftRightWrapper {
   display: flex;
@@ -64,6 +104,37 @@
   display: flex;
   align-items: center;
   margin: 0px 10px 0px 10px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  color: white;
+  font-size: 280%;
+  animation: flash 0.75s ease-out 1;
+  /* left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%; */
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  /* 100% {
+    opacity: 0;
+  } */
 }
 
 @keyframes slideUp {

@@ -34,14 +34,11 @@ function App() {
   return (
     <div className="App">
       <div className="swipe-header">Swipe!</div>
-      {/* <div className="swipe-content"> */}
       <div className="cardContainer">
         {db.map((character) => (
           <TinderWrapper item={character} />
         ))}
       </div>
-      {/* {lastDirection ? <h2 className="infoText">You swiped {lastDirection}</h2> : <h2 className="infoText" />} */}
-      {/* </div> */}
     </div>
   )
 }

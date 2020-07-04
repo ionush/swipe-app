@@ -6,7 +6,7 @@ const Paginator = ({ selected, items }) => {
     <div className="paginator">
       {items.map((e, i) =>
         selected === i ? (
-          <div className="individualPage individualPage__selected" style={{ 'background-image': e }} />
+          <div className="individualPage individualPage__selected" />
         ) : (
           <div className="individualPage" />
         )
